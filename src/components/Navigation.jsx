@@ -109,7 +109,6 @@ export default function Navigation() {
             Literature Reviews
           </StyledNavLink>
           <StyledNavLink to="/visual-art">Visual Art</StyledNavLink>
-          <StyledNavLink to="/contact">Contact</StyledNavLink>
         </StyledNavigation>
         <ClickableArea onClick={handleClickOutsideDrawer} />
       </DrawerContainer>

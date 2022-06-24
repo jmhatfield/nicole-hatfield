@@ -5,7 +5,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import About from "./routes/About";
-import Contact from "./routes/Contact";
 import LitReviews from "./routes/LitReviews";
 import Poetry from "./routes/Poetry";
 import VisualArt from "./routes/VisualArt";
@@ -17,7 +16,6 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
         <Route path="literature-reviews" element={<LitReviews />} />
         <Route path="poetry" element={<Poetry />} />
         <Route path="visual-art" element={<VisualArt />} />

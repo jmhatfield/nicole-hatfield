@@ -35,7 +35,6 @@ export default function App() {
         <StyledLink to="/poetry">Poetry</StyledLink>
         <StyledLink to="/literature-reviews">Literature Reviews</StyledLink>
         <StyledLink to="/visual-art">Visual Art</StyledLink>
-        <StyledLink to="/contact">Contact</StyledLink>
       </StyledNav>
     </Container>
   );
