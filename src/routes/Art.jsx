@@ -1,12 +1,11 @@
-import { Outlet } from "react-router";
 import { Link } from "react-router-dom";
 import PageTemplate from "../components/PageTemplate";
 
-export default function Poetry() {
+export default function Art() {
   return (
     <PageTemplate>
-      <Link to="poem1">poem1</Link>
-      <Outlet replace={true} />
+      <Link to="/visual-art">back</Link>
+      <p>art1</p>
     </PageTemplate>
   );
 }

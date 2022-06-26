@@ -2,60 +2,44 @@ import { Menu } from "react-feather";
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { device } from "../utils/device";
 
 const DrawerButtonContainer = styled.div`
-  display: none;
-
-  @media screen and ${device.mobile} {
-    display: flex;
-    gap: 1rem;
-    position: absolute;
-    align-items: center;
-    padding: 1.5rem;
-  }
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  align-items: center;
 `;
 
 const DrawerButton = styled(Menu)`
-  display: none;
-
-  @media screen and ${device.mobile} {
-    display: block;
-  }
+  display: block;
 `;
 
 const StyledTitle = styled.h1`
-  display: none;
-
-  @media screen and ${device.mobile} {
-    display: block;
-    margin: 0;
-    text-transform: capitalize;
-  }
+  display: block;
+  margin: 0;
+  text-transform: capitalize;
 `;
 
 const DrawerContainer = styled.div`
   display: flex;
-
-  @media screen and ${device.mobile} {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    margin-left: ${(props) => (props.open ? 0 : "-100rem")};
-    transition: margin-left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: ${(props) => (props.open ? 0 : "-100rem")};
+  transition: margin-left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 const StyledNavigation = styled.nav`
   display: flex;
-  padding: 1.5rem;
-  gap: 1rem;
-
-  @media screen and ${device.mobile} {
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
-  }
+  gap: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+  padding: var(--mobile-padding);
 `;
 
 const HomeLink = styled(NavLink)`
@@ -63,11 +47,14 @@ const HomeLink = styled(NavLink)`
   font-weight: bold;
   color: black;
   display: inline;
+  font-family: var(--serif-font);
+  font-size: 14pt;
 `;
 
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: black;
+  font-size: 12pt;
 
   &.active {
     text-decoration: underline;
