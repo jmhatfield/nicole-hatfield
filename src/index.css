@@ -1,21 +1,47 @@
 :root {
-  --serif-font: "Merriweather", serif;
+  --title-font: "Tenali Ramakrishna", serif;
+  --body-font: "Tenali Ramakrishna", serif;
+
+  --font-color: #242424;
+  --primary-color: #cedbd5;
+  --secondary-color: #f4cb5a;
+  --tertiary-color: #4f759b;
+  --background-color: #fdfff7;
+
   --desktop-padding: 2rem;
   --mobile-padding: 1.5rem;
 }
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: var(--body-font);
+  color: var(--font-color);
+  font-size: 16pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  /* background-color: var(--background-color); */
 }
 
 #root {
   height: 100vh;
 }
 
-h1 {
-  font-family: var(--serif-font);
+h1,
+h2 {
+  font-family: var(--title-font);
+  margin: 0;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+a {
+  color: var(--font-color);
+}
+
+pre {
+  font-family: var(--title-font);
+  font-size: 16pt;
 }

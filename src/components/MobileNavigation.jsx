@@ -6,12 +6,22 @@ import styled from "styled-components";
 const DrawerButtonContainer = styled.div`
   display: flex;
   gap: 1rem;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--mobile-padding);
+  padding-bottom: 0.25rem;
+  background-color: white;
   align-items: center;
+  border-bottom: 0.25rem solid var(--primary-color);
+  box-shadow: 0 0.25rem 0 var(--secondary-color);
+  width: 100%;
 `;
 
 const DrawerButton = styled(Menu)`
   display: block;
+  padding-bottom: 0.75rem;
+  padding-right: 0.5rem;
 `;
 
 const StyledTitle = styled.h1`
@@ -28,7 +38,7 @@ const DrawerContainer = styled.div`
   height: 100%;
   width: 100%;
   margin-left: ${(props) => (props.open ? 0 : "-100rem")};
-  transition: margin-left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: margin-left 0.5s cubic-bezier(0.5, 0, 0.2, 1);
 `;
 
 const StyledNavigation = styled.nav`
@@ -40,24 +50,22 @@ const StyledNavigation = styled.nav`
   background-color: white;
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
   padding: var(--mobile-padding);
+  width: 50%;
 `;
 
 const HomeLink = styled(NavLink)`
   text-decoration: none;
   font-weight: bold;
-  color: black;
   display: inline;
-  font-family: var(--serif-font);
-  font-size: 14pt;
+  font-family: var(--title-font);
 `;
 
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  color: black;
-  font-size: 12pt;
 
   &.active {
-    text-decoration: underline;
+    border-bottom: 0.25rem solid var(--primary-color);
+    box-shadow: 0 0.25rem 0 var(--secondary-color);
   }
 `;
 
@@ -78,7 +86,7 @@ export default function Navigation() {
   };
 
   const formatPathname = (pathname) => {
-    return pathname.substring(1).replace("-", " ");
+    return pathname.substring(1).split("/")[0].replace("-", " ");
   };
 
   return (

@@ -8,6 +8,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+
+  h1 {
+    margin-bottom: 1.75rem;
+    border-bottom: 0.25rem solid var(--primary-color);
+    box-shadow: 0 0.25rem 0 var(--secondary-color);
+  }
 `;
 
 const StyledNav = styled.nav`

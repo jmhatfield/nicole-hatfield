@@ -16,12 +16,11 @@ const Content = styled.div`
   padding-top: calc(var(--desktop-padding) + 0.5rem);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 75%;
+  width: 60%;
   margin: auto;
 
   @media screen and ${device.mobile} {
-    padding-top: 3rem;
+    padding-top: 6rem;
     align-items: flex-start;
     width: 100%;
   }

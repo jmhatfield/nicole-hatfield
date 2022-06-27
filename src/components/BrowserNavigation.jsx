@@ -12,8 +12,7 @@ const HomeLink = styled(NavLink)`
   text-decoration: none;
   color: black;
   display: inline;
-  font-family: var(--serif-font);
-  font-size: 14pt;
+  font-family: var(--title-font);
 `;
 
 const SecondaryContainer = styled.div`
@@ -25,10 +24,10 @@ const SecondaryContainer = styled.div`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: black;
-  font-size: 12pt;
 
   &.active {
-    text-decoration: underline;
+    border-bottom: 0.25rem solid var(--primary-color);
+    box-shadow: 0 0.25rem 0 var(--secondary-color);
   }
 `;
 
