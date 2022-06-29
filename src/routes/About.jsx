@@ -27,8 +27,6 @@ const HeadshotContainer = styled.div`
 const Headshot = styled.img`
   height: 12rem;
   border-radius: 50%;
-  border: var(--border-width) solid var(--primary-color);
-  outline: var(--border-width) solid var(--secondary-color);
 
   @media screen and ${device.mobile} {
     margin: auto;

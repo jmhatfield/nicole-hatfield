@@ -10,7 +10,7 @@ const DrawerButtonContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--mobile-padding);
+  padding: 1rem;
   padding-bottom: 0.25rem;
   background-color: white;
   align-items: center;
@@ -29,6 +29,7 @@ const StyledTitle = styled.h1`
   display: block;
   margin: 0;
   text-transform: capitalize;
+  font-size: 24pt;
 `;
 
 const DrawerContainer = styled.div`
