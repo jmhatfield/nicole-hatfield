@@ -12,6 +12,7 @@ const Container = styled.div`
   min-height: 100vh;
   background-image: url(${background});
   background-position: top;
+  background-size: contain;
 `;
 
 const NavContainer = styled.div`

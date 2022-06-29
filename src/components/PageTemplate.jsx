@@ -8,7 +8,7 @@ import BrowserNavigation from "./BrowserNavigation";
 const Background = styled.div`
   background-image: url(${background});
   background-position: top;
-  background-repeat: repeat-y;
+  background-size: contain;
   min-height 100vh;
   height: 100%;
 `;
