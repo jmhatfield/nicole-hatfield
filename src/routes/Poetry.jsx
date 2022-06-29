@@ -24,6 +24,13 @@ const StyledLink = styled(Link)`
     border-bottom: var(--border-width) solid var(--primary-color);
     box-shadow: 0 var(--border-width) 0 var(--secondary-color);
   }
+
+  @media screen and ${device.mobile} {
+    :hover {
+      border-bottom-color: transparent;
+      box-shadow: none;
+    }
+  }
 `;
 
 export default function Poetry() {

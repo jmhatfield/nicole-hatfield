@@ -13,7 +13,6 @@ const Container = styled.div`
   @media screen and ${device.mobile} {
     flex-direction: column;
     width: 100%;
-    padding-top: 1.5rem;
     gap: var(--mobile-padding);
   }
 `;

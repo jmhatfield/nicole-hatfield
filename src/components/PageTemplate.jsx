@@ -38,7 +38,7 @@ const Content = styled.div`
   margin: auto;
 
   @media screen and ${device.mobile} {
-    padding-top: 7rem;
+    padding-top: 5.5rem;
     align-items: flex-start;
     width: 100%;
   }
