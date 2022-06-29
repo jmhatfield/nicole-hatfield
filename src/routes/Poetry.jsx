@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @media screen and ${device.mobile} {
     align-items: flex-start;
@@ -18,11 +18,11 @@ const Container = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  border-bottom: 0.25rem solid transparent;
+  border-bottom: var(--border-width) solid transparent;
 
   :hover {
-    border-bottom: 0.25rem solid var(--primary-color);
-    box-shadow: 0 0.25rem 0 var(--secondary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+    box-shadow: 0 var(--border-width) 0 var(--secondary-color);
   }
 `;
 

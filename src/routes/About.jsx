@@ -1,6 +1,6 @@
 import { Linkedin, Mail, Phone } from "react-feather";
 import styled from "styled-components";
-import headshot from "../assets/images/headshot.jpg";
+import profile from "../assets/images/profile.jpeg";
 import about from "../data/about.json";
 import PageTemplate from "../components/PageTemplate";
 import { device } from "../utils/device";
@@ -27,8 +27,8 @@ const HeadshotContainer = styled.div`
 const Headshot = styled.img`
   height: 12rem;
   border-radius: 50%;
-  border: 0.25rem solid var(--secondary-color);
-  outline: 0.25rem solid var(--primary-color);
+  border: var(--border-width) solid var(--primary-color);
+  outline: var(--border-width) solid var(--secondary-color);
 
   @media screen and ${device.mobile} {
     margin: auto;
@@ -50,7 +50,7 @@ export default function About() {
     <PageTemplate>
       <Container>
         <HeadshotContainer>
-          <Headshot src={headshot} alt="headshot" />
+          <Headshot src={profile} alt="profile picture" />
         </HeadshotContainer>
         <div>
           <p>{about.text}</p>

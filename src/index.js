@@ -12,23 +12,24 @@ import About from "./routes/About";
 import LitReviews from "./routes/LitReviews";
 import Poetry from "./routes/Poetry";
 import VisualArt from "./routes/VisualArt";
+import { routeDefs } from "./utils/routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="about" element={<About />} />
-        <Route path="literature-reviews">
+        <Route path={routeDefs.home.route} element={<App />} />
+        <Route path={routeDefs.about.route} element={<About />} />
+        <Route path={routeDefs.litReviews.route}>
           <Route path="" element={<LitReviews />} />
           <Route path=":id" element={<LitReview />} />
         </Route>
-        <Route path="poetry">
+        <Route path={routeDefs.poetry.route}>
           <Route path="" element={<Poetry />} />
           <Route path=":id" element={<Poem />} />
         </Route>
-        <Route path="visual-art">
+        <Route path={routeDefs.visualArt.route}>
           <Route path="" element={<VisualArt />} />
           <Route path=":id" element={<Art />} />
         </Route>

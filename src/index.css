@@ -2,14 +2,15 @@
   --title-font: "Tenali Ramakrishna", serif;
   --body-font: "Tenali Ramakrishna", serif;
 
-  --font-color: #242424;
-  --primary-color: #cedbd5;
-  --secondary-color: #f4cb5a;
-  --tertiary-color: #4f759b;
-  --background-color: #fdfff7;
+  --font-color: #1b1a2f;
+  --primary-color: #99bdfa;
+  --secondary-color: #cadb4d;
 
   --desktop-padding: 2rem;
   --mobile-padding: 1.5rem;
+
+  --border-width: 0.4rem;
+  --page-width: 60%;
 }
 
 body {
@@ -20,11 +21,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  /* background-color: var(--background-color); */
 }
 
 #root {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1,

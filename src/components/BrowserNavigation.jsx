@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { routeDefs } from "../utils/routes";
 
 const Container = styled.nav`
   display: flex;
@@ -26,24 +27,30 @@ const StyledNavLink = styled(NavLink)`
   color: black;
 
   &.active {
-    border-bottom: 0.25rem solid var(--primary-color);
-    box-shadow: 0 0.25rem 0 var(--secondary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+    box-shadow: 0 var(--border-width) 0 var(--secondary-color);
   }
 `;
 
 export default function Navigation() {
   return (
     <Container>
-      <HomeLink to="/">
-        <h1>Nicole Hatfield</h1>
+      <HomeLink to={routeDefs.home.route}>
+        <h1>{routeDefs.home.title}</h1>
       </HomeLink>
       <SecondaryContainer>
-        <StyledNavLink to="/about">About</StyledNavLink>
-        <StyledNavLink to="/poetry">Poetry</StyledNavLink>
-        <StyledNavLink to="/literature-reviews">
-          Literature Reviews
+        <StyledNavLink to={"/" + routeDefs.about.route}>
+          {routeDefs.about.title}
         </StyledNavLink>
-        <StyledNavLink to="/visual-art">Visual Art</StyledNavLink>
+        <StyledNavLink to={"/" + routeDefs.poetry.route}>
+          {routeDefs.poetry.title}
+        </StyledNavLink>
+        <StyledNavLink to={"/" + routeDefs.litReviews.route}>
+          {routeDefs.litReviews.title}
+        </StyledNavLink>
+        <StyledNavLink to={"/" + routeDefs.visualArt.route}>
+          {routeDefs.visualArt.title}
+        </StyledNavLink>
       </SecondaryContainer>
     </Container>
   );

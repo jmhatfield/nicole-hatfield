@@ -2,6 +2,7 @@ import { Menu } from "react-feather";
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { routeDefs } from "../utils/routes";
 
 const DrawerButtonContainer = styled.div`
   display: flex;
@@ -13,8 +14,8 @@ const DrawerButtonContainer = styled.div`
   padding-bottom: 0.25rem;
   background-color: white;
   align-items: center;
-  border-bottom: 0.25rem solid var(--primary-color);
-  box-shadow: 0 0.25rem 0 var(--secondary-color);
+  border-bottom: var(--border-width) solid var(--primary-color);
+  box-shadow: 0 var(--border-width) 0 var(--secondary-color);
   width: 100%;
 `;
 
@@ -64,8 +65,8 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
 
   &.active {
-    border-bottom: 0.25rem solid var(--primary-color);
-    box-shadow: 0 0.25rem 0 var(--secondary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
+    box-shadow: 0 var(--border-width) 0 var(--secondary-color);
   }
 `;
 
@@ -97,13 +98,19 @@ export default function Navigation() {
       </DrawerButtonContainer>
       <DrawerContainer open={drawerOpen}>
         <StyledNavigation>
-          <HomeLink to="/">Nicole Hatfield</HomeLink>
-          <StyledNavLink to="/about">About</StyledNavLink>
-          <StyledNavLink to="/poetry">Poetry</StyledNavLink>
-          <StyledNavLink to="/literature-reviews">
-            Literature Reviews
+          <HomeLink to={routeDefs.home.route}>{routeDefs.home.title}</HomeLink>
+          <StyledNavLink to={"/" + routeDefs.about.route}>
+            {routeDefs.about.title}
           </StyledNavLink>
-          <StyledNavLink to="/visual-art">Visual Art</StyledNavLink>
+          <StyledNavLink to={"/" + routeDefs.poetry.route}>
+            {routeDefs.poetry.title}
+          </StyledNavLink>
+          <StyledNavLink to={"/" + routeDefs.litReviews.route}>
+            {routeDefs.litReviews.title}
+          </StyledNavLink>
+          <StyledNavLink to={"/" + routeDefs.visualArt.route}>
+            {routeDefs.visualArt.title}
+          </StyledNavLink>
         </StyledNavigation>
         <ClickableArea onClick={handleClickOutsideDrawer} />
       </DrawerContainer>

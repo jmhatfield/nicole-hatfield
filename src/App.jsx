@@ -1,19 +1,29 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import background from "./assets/images/background.jpg";
 import { device } from "./utils/device";
+import { routeDefs } from "./utils/routes";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
+  background-image: url(${background});
+  background-position: top;
+`;
 
-  h1 {
-    margin-bottom: 1.75rem;
-    border-bottom: 0.25rem solid var(--primary-color);
-    box-shadow: 0 0.25rem 0 var(--secondary-color);
-  }
+const NavContainer = styled.div`
+  background-color: white;
+  padding: var(--desktop-padding);
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 1.75rem;
+  border-bottom: var(--border-width) solid var(--primary-color);
+  box-shadow: 0 var(--border-width) 0 var(--secondary-color);
 `;
 
 const StyledNav = styled.nav`
@@ -35,13 +45,23 @@ const StyledLink = styled(Link)`
 export default function App() {
   return (
     <Container>
-      <h1>Nicole Hatfield</h1>
-      <StyledNav>
-        <StyledLink to="/about">About</StyledLink>
-        <StyledLink to="/poetry">Poetry</StyledLink>
-        <StyledLink to="/literature-reviews">Literature Reviews</StyledLink>
-        <StyledLink to="/visual-art">Visual Art</StyledLink>
-      </StyledNav>
+      <NavContainer>
+        <Title>Nicole Hatfield</Title>
+        <StyledNav>
+          <StyledLink to={"/" + routeDefs.about.route}>
+            {routeDefs.about.title}
+          </StyledLink>
+          <StyledLink to={"/" + routeDefs.poetry.route}>
+            {routeDefs.poetry.title}
+          </StyledLink>
+          <StyledLink to={"/" + routeDefs.litReviews.route}>
+            {routeDefs.litReviews.title}
+          </StyledLink>
+          <StyledLink to={"/" + routeDefs.visualArt.route}>
+            {routeDefs.visualArt.title}
+          </StyledLink>
+        </StyledNav>
+      </NavContainer>
     </Container>
   );
 }
