@@ -5,11 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Art from "./routes/Art";
-import Poem from "./routes/Poem";
-import LitReview from "./routes/LitReview";
 import reportWebVitals from "./reportWebVitals";
 import About from "./routes/About";
 import LitReviews from "./routes/LitReviews";
+import Nonfiction from "./routes/Nonfiction";
 import Poetry from "./routes/Poetry";
 import VisualArt from "./routes/VisualArt";
 import { routeDefs } from "./utils/routes";
@@ -21,14 +20,9 @@ root.render(
       <Routes>
         <Route path={routeDefs.home.route} element={<App />} />
         <Route path={routeDefs.about.route} element={<About />} />
-        <Route path={routeDefs.litReviews.route}>
-          <Route path="" element={<LitReviews />} />
-          <Route path=":id" element={<LitReview />} />
-        </Route>
-        <Route path={routeDefs.poetry.route}>
-          <Route path="" element={<Poetry />} />
-          <Route path=":id" element={<Poem />} />
-        </Route>
+        <Route path={routeDefs.litReviews.route} element={<LitReviews />} />
+        <Route path={routeDefs.nonfiction.route} element={<Nonfiction />} />
+        <Route path={routeDefs.poetry.route} element={<Poetry />} />
         <Route path={routeDefs.visualArt.route}>
           <Route path="" element={<VisualArt />} />
           <Route path=":id" element={<Art />} />

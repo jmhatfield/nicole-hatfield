@@ -41,6 +41,10 @@ const StyledNav = styled.nav`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
+
+  :hover {
+    font-weight: bold;
+  }
 `;
 
 export default function App() {
@@ -57,6 +61,9 @@ export default function App() {
           </StyledLink>
           <StyledLink to={"/" + routeDefs.litReviews.route}>
             {routeDefs.litReviews.title}
+          </StyledLink>
+          <StyledLink to={"/" + routeDefs.nonfiction.route}>
+            {routeDefs.nonfiction.title}
           </StyledLink>
           <StyledLink to={"/" + routeDefs.visualArt.route}>
             {routeDefs.visualArt.title}

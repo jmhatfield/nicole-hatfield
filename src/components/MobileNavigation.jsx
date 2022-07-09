@@ -34,7 +34,7 @@ const StyledTitle = styled.h1`
 
 const DrawerContainer = styled.div`
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -108,6 +108,9 @@ export default function Navigation() {
           </StyledNavLink>
           <StyledNavLink to={"/" + routeDefs.litReviews.route}>
             {routeDefs.litReviews.title}
+          </StyledNavLink>
+          <StyledNavLink to={"/" + routeDefs.nonfiction.route}>
+            {routeDefs.nonfiction.title}
           </StyledNavLink>
           <StyledNavLink to={"/" + routeDefs.visualArt.route}>
             {routeDefs.visualArt.title}

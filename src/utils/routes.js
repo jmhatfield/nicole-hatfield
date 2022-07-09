@@ -15,6 +15,10 @@ export const routeDefs = {
     title: "Critical Analysis",
     route: "critical-analysis",
   },
+  nonfiction: {
+    title: "Creative Nonfiction",
+    route: "creative-nonfiction",
+  },
   visualArt: {
     title: "Visual Content",
     route: "visual-content",

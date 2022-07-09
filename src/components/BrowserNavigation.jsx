@@ -26,6 +26,10 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: black;
 
+  :hover {
+    font-weight: bold;
+  }
+
   &.active {
     border-bottom: var(--border-width) solid var(--primary-color);
     box-shadow: 0 var(--border-width) 0 var(--secondary-color);
@@ -47,6 +51,9 @@ export default function Navigation() {
         </StyledNavLink>
         <StyledNavLink to={"/" + routeDefs.litReviews.route}>
           {routeDefs.litReviews.title}
+        </StyledNavLink>
+        <StyledNavLink to={"/" + routeDefs.nonfiction.route}>
+          {routeDefs.nonfiction.title}
         </StyledNavLink>
         <StyledNavLink to={"/" + routeDefs.visualArt.route}>
           {routeDefs.visualArt.title}
