@@ -4,13 +4,13 @@ import { Outlet } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Art from "./routes/Art";
 import reportWebVitals from "./reportWebVitals";
 import About from "./routes/About";
 import LitReviews from "./routes/LitReviews";
 import Nonfiction from "./routes/Nonfiction";
 import Poetry from "./routes/Poetry";
 import VisualArt from "./routes/VisualArt";
+import VisualArtDetail from "./routes/VisualArtDetail";
 import { routeDefs } from "./utils/routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,7 +25,7 @@ root.render(
         <Route path={routeDefs.poetry.route} element={<Poetry />} />
         <Route path={routeDefs.visualArt.route}>
           <Route path="" element={<VisualArt />} />
-          <Route path=":id" element={<Art />} />
+          <Route path=":id" element={<VisualArtDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

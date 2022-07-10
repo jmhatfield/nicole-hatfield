@@ -1,0 +1,179 @@
+[
+  {
+    "name": "",
+    "pieces": [
+      {
+        "title": "Baltimore",
+        "path": "/art/baltimore.jpeg"
+      },
+      {
+        "title": "Fanny Four Eyes",
+        "path": "/art/fanny_four_eyes.jpeg"
+      },
+      {
+        "title": "Forest Garden Layers",
+        "path": "/art/forest_garden_layers.jpeg"
+      },
+      {
+        "title": "Fracturing Death",
+        "path": "/art/fracturing_death.jpeg"
+      },
+      {
+        "title": "Heterotopias",
+        "path": "/art/heterotopias.jpeg"
+      },
+      {
+        "title": "Inversion",
+        "path": "/art/inversion.jpeg"
+      },
+      {
+        "title": "Inversion (color)",
+        "path": "/art/inversion_color.jpeg"
+      },
+      {
+        "title": "Iterations of Home",
+        "path": "/art/iterations_of_home.jpeg"
+      },
+      {
+        "title": "Iterations of Home (detail)",
+        "path": "/art/iterations_of_home_detail.jpeg"
+      },
+      {
+        "title": "Permaculture",
+        "path": "/art/permaculture.jpeg"
+      },
+      {
+        "title": "Red Fish Blue Fish",
+        "path": "/art/red_fish_blue_fish.jpeg"
+      },
+      {
+        "title": "Story and Soil Cycle",
+        "path": "/art/story_and_soil_cycle.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "A Picture of Bath Society: \"The Shade Garden\"",
+    "pieces": [
+      {
+        "title": "Bath Society 1",
+        "path": "/art/bath-society/bath_society_1.png"
+      },
+      {
+        "title": "Bath Society 2",
+        "path": "/art/bath-society/bath_society_2.png"
+      },
+      {
+        "title": "Bath Society 3",
+        "path": "/art/bath-society/bath_society_3.png"
+      },
+      {
+        "title": "Bath Society 4",
+        "path": "/art/bath-society/bath_society_4.png"
+      },
+      {
+        "title": "Bath Society 5",
+        "path": "/art/bath-society/bath_society_5.png"
+      },
+      {
+        "title": "Bath Society 6",
+        "path": "/art/bath-society/bath_society_6.png"
+      }
+    ]
+  },
+  {
+    "name": "Corsetted Love",
+    "pieces": [
+      {
+        "title": "Corsetted Love 1",
+        "path": "/art/corsetted-love/corsetted_love_1.jpeg"
+      },
+      {
+        "title": "Corsetted Love 2",
+        "path": "/art/corsetted-love/corsetted_love_2.jpeg"
+      },
+      {
+        "title": "Corsetted Love 3",
+        "path": "/art/corsetted-love/corsetted_love_3.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Name Pending",
+    "pieces": [
+      {
+        "title": "Cookbook 1",
+        "path": "/art/cookbook/cookbook_1.jpeg"
+      },
+      {
+        "title": "Cookbook 2",
+        "path": "/art/cookbook/cookbook_2.jpeg"
+      },
+      {
+        "title": "Cookbook 3",
+        "path": "/art/cookbook/cookbook_3.jpeg"
+      },
+      {
+        "title": "Cookbook 4",
+        "path": "/art/cookbook/cookbook_4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Permaculture, Food, Lifestyle",
+    "pieces": [
+      {
+        "title": "7 Ways to Think Differently",
+        "path": "/art/permaculture/7_ways_to_think_differently.jpeg"
+      },
+      {
+        "title": "Bone Broth",
+        "path": "/art/permaculture/bone_broth.jpeg"
+      },
+      {
+        "title": "ESFL Pantry Essentials",
+        "path": "/art/permaculture/esfl_pantry_essentials.jpeg"
+      },
+      {
+        "title": "Fermented Dairy",
+        "path": "/art/permaculture/fermented_dairy.jpeg"
+      },
+      {
+        "title": "Fermented Veggies",
+        "path": "/art/permaculture/fermented_veggies.jpeg"
+      },
+      {
+        "title": "Food Tips",
+        "path": "/art/permaculture/food_tips.jpeg"
+      },
+      {
+        "title": "Food Waste Cycle",
+        "path": "/art/permaculture/food_waste_cycle.jpeg"
+      },
+      {
+        "title": "Life Cycle of a Sourdough",
+        "path": "/art/permaculture/life_cycle_of_a_sourdough.jpeg"
+      },
+      {
+        "title": "Life Cycle of Compost",
+        "path": "/art/permaculture/life_cycle_of_compost.jpeg"
+      },
+      {
+        "title": "Life Cycle of Kombucha",
+        "path": "/art/permaculture/life_cycle_of_kombucha.jpeg"
+      },
+      {
+        "title": "Permaculture Principles",
+        "path": "/art/permaculture/permaculture_principles.jpeg"
+      },
+      {
+        "title": "Permaculture Wellness",
+        "path": "/art/permaculture/permaculture_wellness.jpeg"
+      },
+      {
+        "title": "Sustainability",
+        "path": "/art/permaculture/sustainability.jpeg"
+      }
+    ]
+  }
+]
