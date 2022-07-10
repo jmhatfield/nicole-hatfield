@@ -10,7 +10,6 @@ import LitReviews from "./routes/LitReviews";
 import Nonfiction from "./routes/Nonfiction";
 import Poetry from "./routes/Poetry";
 import VisualArt from "./routes/VisualArt";
-import VisualArtDetail from "./routes/VisualArtDetail";
 import { routeDefs } from "./utils/routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,10 +22,7 @@ root.render(
         <Route path={routeDefs.litReviews.route} element={<LitReviews />} />
         <Route path={routeDefs.nonfiction.route} element={<Nonfiction />} />
         <Route path={routeDefs.poetry.route} element={<Poetry />} />
-        <Route path={routeDefs.visualArt.route}>
-          <Route path="" element={<VisualArt />} />
-          <Route path=":id" element={<VisualArtDetail />} />
-        </Route>
+        <Route path={routeDefs.visualArt.route} element={<VisualArt />} />
       </Routes>
     </BrowserRouter>
     <Outlet />
