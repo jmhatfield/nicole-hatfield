@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Phone } from "react-feather";
+import { FileText, Linkedin, Mail, Phone } from "react-feather";
 import styled from "styled-components";
 import profile from "../assets/images/profile.jpeg";
 import about from "../data/about.json";
@@ -52,18 +52,27 @@ export default function About() {
         <div>
           <p>{about.text}</p>
           <ContactInfo>
-            <a href="mailto:nehatfield@gmail.com">
+            <a href="mailto:nehatfield@gmail.com" title="Email">
               <Mail />
             </a>
-            <a href="tel:+14437660476">
+            <a href="tel:+14437660476" title="Call">
               <Phone />
             </a>
             <a
               href="https://www.linkedin.com/in/nicole-hatfield-809552155/"
               target="_blank"
               rel="noreferrer"
+              title="See LinkedIn"
             >
               <Linkedin />
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              title="See resume"
+            >
+              <FileText />
             </a>
           </ContactInfo>
         </div>
