@@ -5,9 +5,14 @@ import art from "../data/art.json";
 import { device } from "../utils/device";
 
 const GridContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+
+  @media screen and ${device.mobile} {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 `;
 
 const CollectionTitle = styled.h2`
@@ -16,13 +21,13 @@ const CollectionTitle = styled.h2`
 `;
 
 const StyledLink = styled.a`
-  flex: 1;
-
   :hover {
     outline: var(--border-width) solid var(--font-color);
   }
 
   @media screen and ${device.mobile} {
+    flex: 1;
+
     :hover {
       outline: none;
     }
@@ -30,8 +35,8 @@ const StyledLink = styled.a`
 `;
 
 const StyledImg = styled.div`
-  min-width: 12rem;
-  min-height: 12rem;
+  width: 100%;
+  padding-top: 100%;
   background-image: url(${(props) => props.src});
   background-size: cover;
   background-position: center;
