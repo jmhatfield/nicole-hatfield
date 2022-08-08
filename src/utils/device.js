@@ -1,7 +1,7 @@
-const size = {
-  mobile: "900px",
+export const size = {
+  mobile: 924,
 };
 
 export const device = {
-  mobile: `(max-width: ${size.mobile})`,
+  mobile: `(max-width: ${size.mobile}px)`,
 };

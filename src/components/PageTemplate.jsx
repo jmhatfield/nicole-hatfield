@@ -1,9 +1,9 @@
-import { BrowserView, MobileView } from "react-device-detect";
 import styled from "styled-components";
 import background from "../assets/images/background.jpg";
-import { device } from "../utils/device";
+import { device, size } from "../utils/device";
 import MobileNavigation from "./MobileNavigation";
 import BrowserNavigation from "./BrowserNavigation";
+import { useEffect, useState } from "react";
 
 const Background = styled.div`
   background-image: url(${background});
@@ -45,15 +45,23 @@ const Content = styled.div`
 `;
 
 export default function PageTemplate(props) {
+  const [mQuery, setMQuery] = useState({
+    matches: window.innerWidth < size.mobile ? true : false,
+  });
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(device.mobile);
+    mediaQuery.onchange = setMQuery;
+  }, []);
+
   return (
     <Background>
       <Container>
-        <BrowserView>
-          <BrowserNavigation />
-        </BrowserView>
-        <MobileView>
+        {mQuery && mQuery.matches ? (
           <MobileNavigation />
-        </MobileView>
+        ) : (
+          <BrowserNavigation />
+        )}
         <Content>{props.children}</Content>
       </Container>
     </Background>

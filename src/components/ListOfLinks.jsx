@@ -16,8 +16,9 @@ const StyledLink = styled.a`
   }
 
   @media screen and ${device.mobile} {
-    :hover {
-      font-weight: default;
+    :hover,
+    :active {
+      font-weight: normal !important;
     }
   }
 `;
